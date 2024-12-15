@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content}, ~{::title}, ~{::script})}">
+<head>
+    <title data-th-text="${loggedInUser.name}+' | SCM'">Dashboard Page</title>
+</head>
+<body>
+    <div id="content">
+        <!-- sidebar -->
+        <!-- user is logged in : sidebar -->
+
+        <div th:if="${loggedInUser}">
+            <div th:replace="~{user/sidebar::sidebar}"></div>
+        </div>
+
+        <div class="sm:pl-64 pt-20" style="height: 1000px;">
+            <div class="flex justify-center flex-col items-center">
+                <h1 class="text-5xl">Welcome To Dashboard Page </h1>
+                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt beatae ea, dolorum sunt quam mollitia voluptatibus cum! Aperiam iusto iure et voluptatum dolores exercitationem dolor suscipit vitae? Necessitatibus officia provident optio aliquid blanditiis. Rerum quas quisquam sit et, ipsum, asperiores commodi cum alias obcaecati quidem consequuntur mollitia! Odit, libero!consectetur, adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        console.log("profile page");
+    </script>
+</body>
+</html>

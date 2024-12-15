@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content}, ~{::title}, ~{::script})}">
+<head>
+    <title>About Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <link href="https://kit.fontawesome.com/a076d05399.js" rel="stylesheet">
+</head>
+<body>
+    <div id="content" class="border">
+    
+        <!-- Banner Section -->
+        <section class="bg-blue-600 text-white py-20 animate__animated animate__fadeInDown">
+          <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">About Contact Manager</h2>
+            <p class="text-lg mb-8">Learn more about us, our mission, and how we help you manage your contacts securely.</p>
+          </div>
+        </section>
+    
+        <!-- Our Mission Section -->
+        <section class="py-20 bg-white">
+          <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12 animate__animated animate__fadeInUp">Our Mission</h2>
+            <p class="text-lg text-gray-600 mb-8">At Contact Manager, we aim to simplify the way you organize and manage your contacts. Our mission is to provide a secure, user-friendly platform that ensures you stay connected to the people that matter the most in your life, both personally and professionally.</p>
+          </div>
+        </section>
+    
+        <!-- Our Vision Section -->
+        <section class="py-20 bg-gray-100">
+          <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12 animate__animated animate__fadeInUp">Our Vision</h2>
+            <p class="text-lg text-gray-600 mb-8">To revolutionize the way the world manages its contacts, creating a seamless and secure communication network for everyone, everywhere.</p>
+          </div>
+        </section>
+    
+        <!-- Our Team Section -->
+        <section class="py-20 bg-white">
+          <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12 animate__animated animate__fadeInUp">Meet Our Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                <img src="https://via.placeholder.com/150" alt="Team Member 1" class="rounded-full mb-4 mx-auto">
+                <h3 class="text-xl font-semibold mb-2">Alice Johnson</h3>
+                <p class="text-gray-600">CEO & Founder</p>
+                <p class="text-gray-600">Alice is passionate about technology and innovation, leading the charge in creating a secure platform for managing contacts.</p>
+              </div>
+              <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                <img src="https://via.placeholder.com/150" alt="Team Member 2" class="rounded-full mb-4 mx-auto">
+                <h3 class="text-xl font-semibold mb-2">John Doe</h3>
+                <p class="text-gray-600">CTO</p>
+                <p class="text-gray-600">John leads the development of the platform, ensuring that Contact Manager runs smoothly and securely for all users.</p>
+              </div>
+              <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                <img src="https://via.placeholder.com/150" alt="Team Member 3" class="rounded-full mb-4 mx-auto">
+                <h3 class="text-xl font-semibold mb-2">Emma White</h3>
+                <p class="text-gray-600">Product Manager</p>
+                <p class="text-gray-600">Emma oversees the user experience, ensuring that the platform is intuitive and easy to use for all our customers.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <!-- Values Section -->
+        <section class="py-20 bg-blue-600 text-white">
+          <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12 animate__animated animate__fadeInUp">Our Core Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                <i class="fas fa-shield-alt text-blue-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Security</h3>
+                <p class="text-gray-600">We prioritize the security of your data with top-tier encryption methods and secure servers.</p>
+              </div>
+              <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                <i class="fas fa-users text-blue-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Customer Focused</h3>
+                <p class="text-gray-600">Our platform is built with the user in mind, constantly evolving to meet your needs and expectations.</p>
+              </div>
+              <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                <i class="fas fa-lightbulb text-blue-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Innovation</h3>
+                <p class="text-gray-600">We embrace new ideas and technologies, striving to provide the best possible service to our users.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <!-- Footer Section -->
+        <footer class="bg-gray-800 text-white py-8">
+          <div class="container mx-auto text-center">
+            <p>&copy; 2024 Contact Manager. All rights reserved.</p>
+            <p>Follow us on <a href="#" class="text-blue-400">Facebook</a>, <a href="#" class="text-blue-400">Twitter</a>, and <a href="#" class="text-blue-400">Instagram</a>.</p>
+          </div>
+        </footer>
+      </div>
+    <script>
+        console.log("About Page");
+    </script>
+</body>
+</html>

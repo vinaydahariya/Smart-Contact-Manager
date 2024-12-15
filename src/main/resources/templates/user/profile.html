@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content}, ~{::title}, ~{::script})}">
+<head>
+    <title data-th-text="${loggedInUser.name}+' | SCM'">Profile Page</title>
+</head>
+<body>
+    <div id="content">
+        <!-- sidebar -->
+        <!-- user is logged in : sidebar -->
+
+        <div th:if="${loggedInUser}">
+            <div th:replace="~{user/sidebar::sidebar}"></div>
+        </div>
+
+        <div class="sm:pl-64 pt-20" style="height: 1000px;">
+            <div class="flex justify-center flex-col items-center">
+                <!-- <h1 class="text-5xl">Welcome To Profile Page </h1>
+                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt beatae ea, dolorum sunt quam mollitia voluptatibus cum! Aperiam iusto iure et voluptatum dolores exercitationem dolor suscipit vitae? Necessitatibus officia provident optio aliquid blanditiis. Rerum quas quisquam sit et, ipsum, asperiores commodi cum alias obcaecati quidem consequuntur mollitia! Odit, libero!consectetur, adipisicing elit.</p> -->
+                <!-- Profile Card -->
+                <div class="max-w-sm w-full bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+                    <div class="flex justify-center">
+                      <img 
+                      th:src="@{${loggedInUser.profilePic}}"
+                        src="path-to-profile-pic.jpg" 
+                        alt="Profile Picture" 
+                        class="w-32 h-32 rounded-full object-cover ">
+                    </div>
+                    <div class="text-center mt-4">
+                      <h2 class="text-2xl font-bold text-gray-800 dark:text-white" data-th-text="${loggedInUser.name}" >John Doe</h2>
+                      <p class="text-sm text-gray-500" data-th-text="${loggedInUser.email}">johndoe@example.com</p>
+                      <p class="text-sm text-gray-500 mt-1" th:text="${loggedInUser.phoneNumber}">+1234567890</p>
+                    </div>
+                    <div class="mt-4">
+                      <p class="text-gray-700 text-center"data-th-text="${loggedInUser.about}" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula nulla.</p>
+                    </div>
+                    <div class="mt-6 grid grid-cols-2 gap-4">
+                      <div class="text-center">
+                        <p class="text-sm text-gray-600" >Email Verified</p>
+                        <p class="font-semibold text-green-500" th:classappend="${loggedInUser.emailVerified} ? 'text-green-500' : 'text-red-500'" 
+                        th:text="${loggedInUser.emailVerified ? 'YES' : 'NO'}">NO</p>
+                      </div>
+                      <div class="text-center">
+                        <p class="text-sm text-gray-600">Phone Verified</p>
+                        <p class="font-semibold text-red-500" th:classappend="${loggedInUser.phoneVerified} ? 'text-green-500' : 'text-red-500'" 
+                        th:text="${loggedInUser.phoneVerified ? 'YES' : 'NO'}" >No</p>
+                      </div>
+                    </div>
+                    <div class="mt-4 text-center">
+                      <p class="text-sm text-gray-600">Provider</p>
+                      <p class="font-semibold text-blue-500"data-th-text="${loggedInUser.provider}" >Google</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        console.log("profile page");
+    </script>
+</body>
+</html>
