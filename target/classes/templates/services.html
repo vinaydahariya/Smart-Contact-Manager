@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content}, ~{::title}, ~{::script})}">
+<head>
+    <title>Services page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <link href="https://kit.fontawesome.com/a076d05399.js" rel="stylesheet">
+</head>
+<body>
+    <div id="content" class="border">
+
+        <!-- Banner Section -->
+        <section class="bg-blue-600 text-white py-20 animate__animated animate__fadeInDown">
+          <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Our Services</h2>
+            <p class="text-lg mb-8">Explore the powerful services we offer to help you manage and protect your contacts, all in one place.</p>
+          </div>
+        </section>
+    
+        <!-- Services Overview Section -->
+        <section class="py-20 bg-white">
+          <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12 animate__animated animate__fadeInUp">Our Services</h2>
+            <p class="text-lg text-gray-600 mb-8">At Contact Manager, we provide a comprehensive suite of services to make contact management effortless and secure.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                <i class="fas fa-address-book text-blue-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Contact Management</h3>
+                <p class="text-gray-600">Add, organize, and manage your contacts in a simple, intuitive platform. Keep everything in one place and access it with ease.</p>
+              </div>
+              <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                <i class="fas fa-lock text-blue-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Data Security</h3>
+                <p class="text-gray-600">We employ state-of-the-art encryption techniques to keep your contact information safe, private, and protected.</p>
+              </div>
+              <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                <i class="fas fa-cloud text-blue-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Cloud Syncing</h3>
+                <p class="text-gray-600">Access your contacts across multiple devices with seamless cloud syncing. No matter where you are, your contacts are always with you.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <!-- Detailed Services Section -->
+        <section class="py-20 bg-gray-100">
+          <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12 animate__animated animate__fadeInUp">Why Choose Our Services?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="p-6 bg-white rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                <h3 class="text-xl font-semibold mb-2">Advanced Search & Filter Options</h3>
+                <p class="text-gray-600">Quickly find the contact you need with advanced search features and filters that allow you to search by name, phone number, email, or custom tags.</p>
+              </div>
+              <div class="p-6 bg-white rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                <h3 class="text-xl font-semibold mb-2">Customizable Fields</h3>
+                <p class="text-gray-600">Personalize your contact information with custom fields to capture all the details that matter to you, whether it's birthdays, addresses, or social media profiles.</p>
+              </div>
+              <div class="p-6 bg-white rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                <h3 class="text-xl font-semibold mb-2">Backup & Restore</h3>
+                <p class="text-gray-600">Ensure that your contact data is always safe with our backup and restore features. In case of accidental deletion or device failure, restoring your data is just a click away.</p>
+              </div>
+              <div class="p-6 bg-white rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                <h3 class="text-xl font-semibold mb-2">Real-Time Sync</h3>
+                <p class="text-gray-600">Automatically sync your contacts across all your devices, ensuring that your contact information is always up-to-date no matter where you make changes.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <!-- Call to Action Section -->
+        <section class="bg-blue-600 text-white py-20 animate__animated animate__fadeInUp">
+          <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+            <p class="text-lg mb-8">Sign up today and take advantage of all our powerful contact management services.</p>
+            <a href="#" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Create an Account</a>
+          </div>
+        </section>
+    
+        <!-- Testimonials Section -->
+        <section class="py-20 bg-white">
+          <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12 animate__animated animate__fadeInUp">What Our Customers Are Saying</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                <p class="text-gray-600 italic">"The cloud syncing feature has been a game changer for me. I can access my contacts from any device, anytime!"</p>
+                <h4 class="text-lg font-semibold mt-4">- Sarah Lee</h4>
+              </div>
+              <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+                <p class="text-gray-600 italic">"I love the customizable fields, I can store everything I need about my contacts in one place. It's so easy to use!"</p>
+                <h4 class="text-lg font-semibold mt-4">- Mark Thompson</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <!-- Footer Section -->
+        <footer class="bg-gray-800 text-white py-8">
+          <div class="container mx-auto text-center">
+            <p>&copy; 2024 Contact Manager. All rights reserved.</p>
+            <p>Follow us on <a href="#" class="text-blue-400">Facebook</a>, <a href="#" class="text-blue-400">Twitter</a>, and <a href="#" class="text-blue-400">Instagram</a>.</p>
+          </div>
+        </footer>
+    
+      </div>
+    <script>
+        console.log("Services Page");
+    </script>
+</body>
+</html>
