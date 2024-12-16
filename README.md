@@ -9,3 +9,5 @@ This is contact management web application here i used technology is :
    3. Spring security
    4. Cloudinary
    5. Spring Data JPA
+  
+Note:- this project is not completed 100%. there's still some work left to do
